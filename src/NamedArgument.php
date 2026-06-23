@@ -82,9 +82,9 @@ class NamedArgument
     }
 
     /**
-     * Checks if `$name` exists in `getType()` returned string
+     * Checks if `$value` exists in `getType()` returned string
      *  
-     * @param mixed $name
+     * @param mixed $value
      * 
      * @return bool 
      */

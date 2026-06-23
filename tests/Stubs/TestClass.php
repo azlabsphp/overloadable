@@ -19,6 +19,10 @@ class TestClass
 {
     use Overloadable;
 
+    /**
+     * @param mixed ...$args 
+     * @return mixed 
+     */
     public function log(...$args)
     {
         return $this->overload($args, [
@@ -31,6 +35,10 @@ class TestClass
         ]);
     }
 
+    /**
+     * @param mixed ...$args 
+     * @return mixed 
+     */
     public function writeLog(...$args)
     {
         return $this->overload($args, [

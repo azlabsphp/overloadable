@@ -28,8 +28,8 @@ trait Overloadable
     public function overload($args, $signatures)
     {
         $fallbacks = [];
-        $handlers = TypesUtil::iterableFilter(
-            TypesUtil::iterableMap(
+        $handlers = TypesUtil::filter(
+            TypesUtil::map(
                 new \ArrayIterator($signatures ?? []),
                 function ($value, $key) {
                     return new OverloadedMethod($value, $key, $this);
@@ -57,7 +57,7 @@ trait Overloadable
             }
         } else {
             // Look for the method having a more specific argument type definition
-            $handler = TypesUtil::iterableReduce(
+            $handler = TypesUtil::reduce(
                 new \ArrayIterator($handlers),
                 static function ($carry, $curr) {
                     if (null === $carry) {
@@ -89,6 +89,8 @@ trait Overloadable
     }
 
     /**
+     * @param array $values
+     * 
      * @return OverloadedMethod
      */
     private function getMethod($values)

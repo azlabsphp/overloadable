@@ -15,7 +15,7 @@ namespace Drewlabs\Overloadable;
 
 use Traversable;
 
-class TypesUtil
+final class TypesUtil
 {
 
     /**
@@ -41,7 +41,7 @@ class TypesUtil
      * @param bool $preserve 
      * @return \Traversable
      */
-    public static function iterableMap(
+    public static function map(
         iterable $iterator,
         callable $callback,
         $preserve = true
@@ -66,7 +66,7 @@ class TypesUtil
      * @param int $flags 
      * @return \Traversable 
      */
-    public static function iterableFilter(
+    public static function filter(
         iterable $iterator,
         callable $predicate,
         $preserve = true,
@@ -96,12 +96,12 @@ class TypesUtil
     /**
      * Apply a reducer function on a iterable
      * 
-     * @param iterable $iterator 
+     * @param \Traversable $iterator 
      * @param callable $reducer 
      * @param mixed $initial 
      * @return mixed 
      */
-    public static function iterableReduce(
+    public static function reduce(
         iterable $iterator,
         callable $reducer,
         $initial = null

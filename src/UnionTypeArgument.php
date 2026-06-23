@@ -4,7 +4,7 @@ namespace Drewlabs\Overloadable;
 
 use ReflectionUnionType;
 
-class UnionTypeArgument
+final class UnionTypeArgument
 {
     /**
      * @var string
@@ -28,7 +28,7 @@ class UnionTypeArgument
      * @param string|null $name 
      * @param bool $optional 
      */
-    public function __construct(ReflectionUnionType $type, string $name = null, bool $optional = false)
+    public function __construct(ReflectionUnionType $type, ?string $name = null, bool $optional = false)
     {
         $this->name = $name;
         $this->type = $type;
@@ -64,9 +64,9 @@ class UnionTypeArgument
 
 
     /**
-     * Checks if `$name` exists in `getType()` returned string
+     * Checks if `$value` exists in `getType()` returned string
      *  
-     * @param mixed $name
+     * @param mixed $value
      * 
      * @return bool 
      */

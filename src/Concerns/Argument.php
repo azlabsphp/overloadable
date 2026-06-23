@@ -15,6 +15,10 @@ namespace Drewlabs\Overloadable\Concerns;
 
 use Drewlabs\Overloadable\ArgumentType;
 
+/**
+ * @property string $state
+ * @property string $type
+ */
 trait Argument
 {
     /**

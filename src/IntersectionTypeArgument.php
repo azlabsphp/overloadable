@@ -39,7 +39,7 @@ class IntersectionTypeArgument
     }
 
     /**
-     * Returns the argument type binded to the current Function argument.
+     * returns the argument type binded to the current Function argument.
      *
      * @return string
      */
@@ -57,9 +57,10 @@ class IntersectionTypeArgument
 
 
     /**
-     * Checks if `$name` exists in `getType()` returned string
+     * Checks if `$value` exists in `getType()` returned string
      *  
-     * @param mixed $name 
+     * @param mixed $value 
+     * 
      * @return bool 
      */
     public function match($value)

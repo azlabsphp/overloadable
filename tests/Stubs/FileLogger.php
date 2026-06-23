@@ -17,7 +17,7 @@ class FileLogger implements Logger
 {
     public function log(?string $prefix = null): string
     {
-        return "${prefix}: Logging to the system resource...";
+        return "$prefix: Logging to the system resource...";
     }
 
 }

@@ -15,5 +15,9 @@ namespace Drewlabs\Overloadable\Tests\Stubs;
 
 interface Console
 {
+    /**
+     * @param mixed ...$arg 
+     * @return mixed 
+     */
     public function write(...$arg);
 }

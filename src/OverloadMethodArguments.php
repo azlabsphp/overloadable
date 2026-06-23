@@ -173,7 +173,7 @@ class OverloadMethodArguments
     /**
      * Retruns the argument count value
      * 
-     * @return int<0, \max> 
+     * @return int
      */
     public function count()
     {
@@ -184,7 +184,7 @@ class OverloadMethodArguments
      * Returns agument length. It's an alias to the argument
      * count method definition
      * 
-     * @return int<0, \max> 
+     * @return int
      */
     public function length()
     {
@@ -194,7 +194,7 @@ class OverloadMethodArguments
     /**
      * Returnn all argument as array
      * 
-     * @return FuncArgument[]
+     * @return array
      */
     public function getAll()
     {

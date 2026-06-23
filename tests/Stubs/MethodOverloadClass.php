@@ -20,6 +20,10 @@ class MethodOverloadClass
 {
     use Overloadable;
 
+    /**
+     * @param mixed ...$args 
+     * @return mixed 
+     */
     public function someMethod(...$args)
     {
         return $this->overload($args, [
