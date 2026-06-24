@@ -2,3 +2,4 @@
 .vscode/
 metals/
 .DS_Store
+.phpunit.cache/
